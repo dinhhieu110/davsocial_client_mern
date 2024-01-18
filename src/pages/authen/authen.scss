@@ -1,0 +1,221 @@
+.authen {
+  height: 100vh;
+  width: 100vw;
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  .card {
+    border-radius: 6px;
+    width: 1000px;
+    height: 636px;
+    display: flex;
+    align-items: center;
+    .left {
+      flex: 1;
+      h1 {
+        color: rgb(53, 90, 253);
+        font-size: 60px;
+      }
+      p {
+        font-size: 24px;
+        margin-bottom: 200px;
+        margin-right: 50px;
+        margin-top: 5px;
+      }
+    }
+    .right {
+      flex: 1;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-bottom: 100px;
+      .wrapper {
+        border-radius: 10px;
+        width: 80%;
+        height: 60%;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+        form {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          input {
+            width: 100%;
+            height: 50px;
+            margin: 10px 0;
+            background-color: #e8f0fe;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+            padding: 20px;
+          }
+
+          button {
+            width: 100%;
+            color: #fff;
+            font-weight: 700;
+            font-size: 18px;
+            background-color: #1877f2;
+            padding: 15px 0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px 0;
+          }
+
+          a {
+            text-align: center;
+            text-decoration: none;
+            font-size: 14px;
+            margin: 20px 0;
+            color: #1877f2;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+          hr {
+            width: 100%;
+            border: -2px solid black; /* You can adjust the thickness by changing the value */
+          }
+          .btn-regis {
+            background-color: #42b72a;
+            width: 50%;
+            margin: 25px 0;
+          }
+        }
+      }
+      p {
+        text-align: center;
+        font-size: 14px;
+        margin-top: 20px;
+        margin-right: 60px;
+      }
+    }
+  }
+  .register {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #ffffffcc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .card {
+      width: 30%;
+      height: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+      justify-content: space-around;
+      padding: 12px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+      position: relative;
+      .close {
+        position: absolute;
+        top: 30px;
+        right: -430px;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: 600;
+      }
+      h2 {
+        font-weight: 700;
+        width: 100%;
+        font-size: 32px;
+      }
+      p,
+      span {
+        width: 100%;
+        font-weight: 400;
+        font-size: 14px;
+      }
+      span {
+        font-size: 12px;
+        font-weight: 350;
+        margin-bottom: -10px;
+
+        a {
+          text-decoration: none;
+          color: blue;
+        }
+      }
+      p {
+        margin-bottom: 5px;
+        margin-top: -10px;
+      }
+      hr {
+        border: -2px solid rgb(255, 255, 255);
+        width: 106%;
+      }
+
+      .fullname {
+        display: flex;
+        gap: 20px;
+        width: 100%;
+        input {
+          background-color: #eeeff1;
+          padding: 15px 15px;
+          border: none;
+          outline: none;
+          border-radius: 5px;
+        }
+      }
+      input {
+        background-color: #eeeff1;
+        padding: 15px 15px;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        width: 100%;
+      }
+      .date,
+      .gender {
+        width: 100%;
+        gap: 10px;
+        display: flex;
+
+        select {
+          width: 100%;
+          padding: 10px 8px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+        }
+        .rad {
+          width: 100%;
+          display: flex;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          padding: 10px 8px;
+          input[type="radio"] {
+            transform: scale(0.6); /* Giảm kích thước của nút radio */
+            margin-right: -30px; /* Tăng khoảng cách giữa nút radio và văn bản bên cạnh (nếu có) */
+          }
+        }
+      }
+      button {
+        color: #fff;
+        background-color: #00a400;
+        font-weight: 600;
+        font-size: 18px;
+        padding: 8px 0px;
+        width: 50%;
+        border-radius: 6px;
+        border: none;
+        margin-top: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+}
